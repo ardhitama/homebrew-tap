@@ -1,6 +1,6 @@
 cask "fanmac" do
-  version "0.1.2"
-  sha256 "10f63d1b5cb274584e74007c70cc060a23186798267714b3f9d0b6551d540386"
+  version "0.1.0"
+  sha256 "5b52bf955a742b445431b95496c013b0ab52c9006b6512cb8f7be35c52bdbc48"
 
   url "https://github.com/ardhitama/homebrew-tap/releases/download/fanmac-v#{version}/fanmac-macos.tar.gz"
   name "FanMac"
@@ -12,7 +12,7 @@ cask "fanmac" do
   app "FanMac.app"
   binary "FanMac.app/Contents/Helpers/fanmac"
 
-  uninstall quit: "tests.fan"
+  uninstall quit: "com.ardhitama.fanmac.app"
 
   zap delete: [
         "/etc/sudoers.d/smc-fan-helper",
@@ -21,6 +21,7 @@ cask "fanmac" do
       ],
       trash:  [
         "~/Library/Application Support/FanMac",
+        "~/Library/Preferences/com.ardhitama.fanmac.app.plist",
         "~/Library/Preferences/tests.fan.plist",
       ]
 
