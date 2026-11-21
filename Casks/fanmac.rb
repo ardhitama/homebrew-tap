@@ -1,6 +1,6 @@
 cask "fanmac" do
-  version "0.2.3"
-  sha256 "3455d251c81f8e1136fb61734adba9e52de61f7854b90117b67f738075decb31"
+  version "1.0.0"
+  sha256 "b2fd77dab41096f848d444f966cb4b4052c4019a6ea27635035eb454bf97f113"
 
   url "https://github.com/ardhitama/homebrew-tap/releases/download/fanmac-v#{version}/fanmac-macos.tar.gz"
   name "FanMac"
